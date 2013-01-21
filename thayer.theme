@@ -234,26 +234,26 @@ abstracts = {
 
 formats = {
   "fe-common/core" = {
-    pubmsg = "{pubmsgnick $2 {pubnick $[-9]0}}$1";
-    own_msg = "{ownmsgnick $2 {ownnick $[-9]0}}$1";
-    own_msg_channel = "{ownmsgnick $3 {ownnick $[-9]0}{msgchannel $1}}$2";
-    pubmsg_me = "{pubmsgmenick $2 {menick $[-9]0}}$1";
-    pubmsg_me_channel = "{pubmsgmenick $3 {menick $[-9]0}{msgchannel $1}}$2";
-    pubmsg_hilight = "{pubmsghinick $0 $3 $[-9]1}$2";
-    pubmsg_hilight_channel = "{pubmsghinick $0 $4 $[-9]1{msgchannel $2}}$3";
-    pubmsg_channel = "{pubmsgnick $3 {pubnick $[-9]0}{msgchannel $1}}$2";
-    own_msg_private_query = "{ownprivmsgnick {ownprivnick $[-10]2}}$1";
-    msg_private_query = "{privmsgnick $[-10]0}$2";
+    pubmsg = "{pubmsgnick $2 {pubnick $[-12]0}}$1";
+    own_msg = "{ownmsgnick $2 {ownnick $[-12]0}}$1";
+    own_msg_channel = "{ownmsgnick $3 {ownnick $[-12]0}{msgchannel $1}}$2";
+    pubmsg_me = "{pubmsgmenick $2 {menick $[-12]0}}$1";
+    pubmsg_me_channel = "{pubmsgmenick $3 {menick $[-12]0}{msgchannel $1}}$2";
+    pubmsg_hilight = "{pubmsghinick $0 $3 $[-12]1}$2";
+    pubmsg_hilight_channel = "{pubmsghinick $0 $4 $[-12]1{msgchannel $2}}$3";
+    pubmsg_channel = "{pubmsgnick $3 {pubnick $[-12]0}{msgchannel $1}}$2";
+    own_msg_private_query = "{ownprivmsgnick {ownprivnick $[-13]2}}$1";
+    msg_private_query = "{privmsgnick $[-13]0}$2";
   };
   "fe-common/irc" = {
-    own_action = "{ownaction {ownnick $[-10]0}}$1";
-    action_public = "{pubaction {pubnick $[-10]0}}$1";
-    action_private_query = "{pvtaction_query {pvnick $[-10]0}}$2";
+    own_action = "{ownaction {ownnick $[-13]0}}$1";
+    action_public = "{pubaction {pubnick $[-13]0}}$1";
+    action_private_query = "{pvtaction_query {pvnick $[-13]0}}$2";
   };
   "fe-common/irc/dcc" = {
-    own_dcc_query = "{ownmsgnick {dccownquerynick $[-10]0}}$2";
-    dcc_msg_query = "{privmsgnick $[-10]0}$1";
-    own_dcc_action_query = "{dccownaction %R$[-10]0%n}$2";
-    action_dcc_query = "{dccaction {pvnick $[-10]0}}$1";
+    own_dcc_query = "{ownmsgnick {dccownquerynick $[-13]0}}$2";
+    dcc_msg_query = "{privmsgnick $[-13]0}$1";
+    own_dcc_action_query = "{dccownaction %R$[-13]0%n}$2";
+    action_dcc_query = "{dccaction {pvnick $[-13]0}}$1";
   };
 };
