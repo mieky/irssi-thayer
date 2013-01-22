@@ -13,7 +13,7 @@ abstracts = {
   line_start = "%g//%n ";
 
   # timestamp styling, nothing by default
-  timestamp = "%g$0-%n";
+  timestamp = "%b$0-%n";
 
   # any kind of text that needs hilighting, default is to bold
   hilight = "%_$0-%_";
@@ -100,7 +100,7 @@ abstracts = {
 
   # public highlighted message in channel
   # $0 = highlight color, $1 = nick mode, $2 = nick
-  pubmsghinick = "{msgnick %w$1 %y$2-%n{separator}}%C";
+  pubmsghinick = "{msgnick %w$1 %W$2-%n{separator}}%n";
 
   # channel name is printed with message
   msgchannel = "%K:%c$0-%n";
